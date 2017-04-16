@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+      /*eliminates white space around edges of page --------------------*/
 * {
 margin: 0px;
 padding: 0px;
 }
 
+      /*text stuff --------------------*/
 body {
   font-family: 'Roboto Condensed';
   color: #303030;
@@ -14,7 +16,8 @@ p {
   font-family: 'Roboto Condensed';
   margin: auto;
   color: #303030;
-  font-size: 15px;
+  line-height: 1.8;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -64,7 +67,7 @@ h5 {
   color: #303030;
   text-align: center;
 }
-
+      /*dividers --------------------*/
 hr {
   width: 87%;
   margin: auto;
@@ -87,24 +90,92 @@ hr.blueee {
   width: 25px;
   margin: auto;
 }
-
+        /*keeps images at 100% of browser --------------------*/
 img {
   max-width: 100%;
 }
+        /*step 1 w/ box shadow hover (thingyCar selects the Wall Decals option) --------------------*/
 
 #stepOne {
-  width: 90%;
+  width: 93%;
   margin:auto;
   padding: 5px;
 }
 
 .thingy {
-    margin: 5px;
+    margin: 20px;
     border: 0px;
     float: left;
     background-color: #ffffff;
     width: 350px;
     height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thingyCar {
+    margin: 20px;
+    border: 0px;
+    float: left;
+    background-color: #ffffff;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thingy::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thingyCar::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.thingy:hover {
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
+}
+
+.thingyCar:hover {
+  -webkit-transform: scale(1.15, 1.15);
+  transform: scale(1.15, 1.15);
+}
+
+.thingy:hover::after {
+    opacity: 1;
+}
+
+.thingyCar:hover::after {
+    opacity: 1;
 }
 
 #logo {
@@ -120,8 +191,6 @@ img {
 }
 
 #underLogo {
-  /*position: relative;
-  top: 157px;*/
   width: 100%;
   height: 64px;
   background-color: #074f9a;
