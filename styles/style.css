@@ -10,6 +10,7 @@ padding: 0px;
 body {
   font-family: 'Roboto Condensed';
   color: #303030;
+  display: block;
 }
 
 p {
@@ -19,6 +20,7 @@ p {
   line-height: 1.8;
   font-size: 13px;
   text-align: center;
+  display: block;
 }
 
 p.one {
@@ -29,6 +31,7 @@ p.one {
   line-height: 1.7;
   font-size: 16px;
   text-align: center;
+  display: block;
 }
 
 p.two {
@@ -39,6 +42,7 @@ p.two {
   line-height: 1.8;
   font-size: 13px;
   text-align: center;
+  display: block;
 }
 
 h1 {
@@ -221,6 +225,10 @@ img {
   text-align: center;
 }
 
+.chartTwo {
+  display: none;
+}
+
 #top {
   position: static;
   z-index: 1;
@@ -259,4 +267,175 @@ footer {
   width: 100%;
   height: 400px;
   background-color: #0e6eb8;
+}
+
+
+
+/*MEDIA QUERY!*/
+
+/*this SHOULD be feasible for any screen smaller than a laptop or desktop. divs stack on top of
+eachother instead of appearing side by side*/
+
+@media (max-width : 1260px) {
+
+  body {
+    font-family: 'Roboto Condensed';
+    color: #303030;
+    display: block;
+  }
+
+  p {
+    font-family: 'Roboto Condensed';
+    margin: auto;
+    color: #303030;
+    line-height: 1.8;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  p.one {
+    font-family: 'Roboto Condensed';
+    max-width: 77%;
+    margin: auto;
+    color: #303030;
+    line-height: 1.7;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+  }
+
+  p.two {
+    font-family: 'Roboto Condensed';
+    max-width: 85%;
+    margin: auto;
+    color: #303030;
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-family: 'Roboto Condensed';
+    color: #0e6eb8;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: 'Roboto Condensed';
+    color: #0e6eb8;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed';
+    color: #0e6eb8;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Roboto Condensed';
+    color: #0e6eb8;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 13px;
+    font-family: 'Roboto Condensed';
+    color: #303030;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 17px;
+    font-family: 'Roboto Condensed';
+    color: #0e6eb8;
+    text-align: center;
+  }
+
+
+  #stepOne {
+    width: 100%;
+    margin:auto;
+    padding: 5px;
+  }
+
+  #stepTwo {
+    width: 100%;
+    margin:auto;
+    padding: 5px;
+  }
+
+  #stepToo {
+    width: 100%;
+    margin:auto;
+    padding: 5px;
+  }
+
+  .thingy {
+    background-color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    margin: auto;
+    margin-top: 5px;
+
+  }
+
+  .thingyCar {
+    background-color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .thingy img {
+    float: left;
+    width: 35%;
+    height: auto;
+  }
+
+  .thingyCar img {
+    float: left;
+    width: 35%;
+    height: auto;
+  }
+
+
+  .button {
+      background-color: #ff632d;
+      position: relative;
+      border: none;
+      color: white;
+      padding: 9px 27px;
+      width: 30%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 8px;
+  }
+
+}
+
+@media (max-width : 750px) {
+
+  .chartOne{
+       display: none;
+     }
+
+  .chartTwo{
+       display: block;
+     }
+
 }
