@@ -412,14 +412,21 @@ eachother instead of appearing side by side*/
     height: auto;
   }
 
+  #button {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+    left: 0;
+  }
 
   .button {
       background-color: #ff632d;
       position: relative;
       border: none;
       color: white;
-      padding: 9px 27px;
-      width: 30%;
+      padding: 7px 15px;
+      width: 15%;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -437,5 +444,17 @@ eachother instead of appearing side by side*/
   .chartTwo{
        display: block;
      }
+
+     .button {
+         background-color: #ff632d;
+         position: relative;
+         border: none;
+         color: white;
+         padding: 3px 10px;
+         width: 15%;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 8px;
 
 }
