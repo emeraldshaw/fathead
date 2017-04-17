@@ -31,6 +31,16 @@ p.one {
   text-align: center;
 }
 
+p.two {
+  font-family: 'Roboto Condensed';
+  max-width: 85%;
+  margin: auto;
+  color: #303030;
+  line-height: 1.8;
+  font-size: 13px;
+  text-align: center;
+}
+
 h1 {
   font-size: 40px;
   font-family: 'Roboto Condensed';
@@ -67,6 +77,19 @@ h5 {
   color: #303030;
   text-align: center;
 }
+
+h6 {
+  font-size: 21px;
+  font-family: 'Roboto Condensed';
+  color: #0e6eb8;
+  text-align: center;
+}
+
+a:hover {background-color: #ff632d;}
+a:link {color: #074f9a;}
+a:visited {color: #074f9a;}
+a:hover { text-decoration:none;
+text-shadow: 0 0 7px #5c7761;}
       /*dividers --------------------*/
 hr {
   width: 87%;
@@ -94,10 +117,22 @@ hr.blueee {
 img {
   max-width: 100%;
 }
-        /*step 1 w/ box shadow hover (thingyCar selects the Wall Decals option) --------------------*/
+        /*steps 1 and 2 w/ box shadow hover (thingyCar selects the Wall Decals option) --------------------*/
 
 #stepOne {
   width: 93%;
+  margin:auto;
+  padding: 5px;
+}
+
+#stepTwo {
+  width: 93%;
+  margin:auto;
+  padding: 5px;
+}
+
+#stepToo {
+  width: 65%;
   margin:auto;
   padding: 5px;
 }
@@ -108,7 +143,7 @@ img {
     float: left;
     background-color: #ffffff;
     width: 350px;
-    height: auto;
+    height: 525px;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -122,7 +157,7 @@ img {
     float: left;
     background-color: #ffffff;
     width: 350px;
-    height: auto;
+    height: 525px;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -182,6 +217,10 @@ img {
   text-align: center;
 }
 
+#chart {
+  text-align: center;
+}
+
 #top {
   position: static;
   z-index: 1;
@@ -194,4 +233,30 @@ img {
   width: 100%;
   height: 64px;
   background-color: #074f9a;
+}
+
+#button {
+  text-align: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.button {
+    background-color: #ff632d;
+    position: relative;
+    border: none;
+    color: white;
+    padding: 9px 37px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #0e6eb8;
 }
